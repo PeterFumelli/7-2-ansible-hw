@@ -8,13 +8,13 @@
 
 ```yaml
 ---
-- name: Download and extract an archive
+- name: Kafka download&extract
   hosts: all
   become: true
   tasks:
     - name: Create a directory for extraction
       file:
-        path: /opt/myarchive
+        path: /opt/archive
         state: directory
 
     - name: Download the archive
@@ -25,9 +25,12 @@
     - name: Extract the archive
       unarchive:
         src: /tmp/kafka.tgz
-        dest: /opt/myarchive
+        dest: /opt/archive
         remote_src: yes
 ```
+
+<<https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/kafka.png>>
+
 
 2. Установка tuned и настройка автозапуска
 
@@ -49,4 +52,22 @@
         enabled: true
 ```
 
-### Задание 2
+3: Изменение motd
+
+```yaml
+---
+- name: Update system MOTD
+  hosts: all
+  become: true
+  vars:
+    custom_motd: "Welcome, Admin!"
+
+  tasks:
+  - name: Update the motd file
+      copy:
+        content: "{{ custom_motd }}"
+        dest: /etc/motd
+```
+
+
+

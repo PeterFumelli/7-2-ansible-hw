@@ -1,5 +1,5 @@
 ---
-- name: Download and extract an archive
+- name: Kafka download&extract
   hosts: all
   become: true
   tasks:
