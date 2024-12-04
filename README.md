@@ -28,8 +28,9 @@
         dest: /opt/archive
         remote_src: yes
 ```
+###
 
-<<https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/kafka.png>>
+KAFKA <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/kafka.png>
 
 
 2. Установка tuned и настройка автозапуска
