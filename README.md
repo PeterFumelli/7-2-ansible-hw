@@ -80,4 +80,30 @@ MOTD  <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/motd2.png>
 
 <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/motd.png>
 
+### Задание 2
 
+Модифицируйте плейбук из пункта 3, задания 1. В качестве приветствия он должен установить IP-адрес и hostname управляемого хоста, пожелание хорошего дня системному администратору.
+
+```yaml
+---
+- name: Update MOTD
+  hosts: all
+  become: true
+  tasks:
+    - name: Get the IP address of the host
+      command: hostname -I
+      register: ip_output
+
+    - name: Get the hostname of the host
+      command: hostname
+      register: hostname_output
+
+    - name: Update the motd file
+      copy:
+        content: |
+          Welcome to your system!
+          Hostname: {{ hostname_output.stdout }}
+          IP Address: {{ ip_output.stdout }}
+          Отличного дня, Админ!
+        dest: /etc/motd
+```
