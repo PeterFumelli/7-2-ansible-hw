@@ -1,0 +1,20 @@
+---
+- name: Download and extract an archive
+  hosts: all
+  become: true
+  tasks:
+    - name: Create a directory for extraction
+      file:
+        path: /opt/myarchive
+        state: directory
+
+    - name: Download the archive
+      get_url:
+        url: https://archive.apache.org/dist/kafka/2.8.0/kafka_2.13-2.8.0.tgz
+        dest: /tmp/kafka.tgz
+
+    - name: Extract the archive
+      unarchive:
+        src: /tmp/kafka.tgz
+        dest: /opt/myarchive
+        remote_src: yes
