@@ -28,10 +28,10 @@
         dest: /opt/myarchive
         remote_src: yes
 ```
+
 ###
 
 KAFKA <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/kafka.png>
-
 
 2. Установка tuned и настройка автозапуска
 
@@ -53,7 +53,11 @@ KAFKA <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/kafka.png>
         enabled: true
 ```
 
-3: Изменение motd
+###
+
+<https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/tuned.png>
+
+3. Изменение motd
 
 ```yaml
 ---
@@ -70,5 +74,6 @@ KAFKA <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/kafka.png>
         dest: /etc/motd
 ```
 
+###
 
 
