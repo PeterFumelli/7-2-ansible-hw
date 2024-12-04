@@ -107,3 +107,11 @@ MOTD  <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/motd2.png>
           Отличного дня, Админ!
         dest: /etc/motd
 ```
+
+Update MOTD <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/update_motd.png.png>
+
+### Задание 3
+
+Выполните действия, приложите архив с ролью и вывод выполнения.
+
+
