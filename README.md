@@ -55,7 +55,7 @@ KAFKA <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/kafka.png>
 
 ###
 
-<https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/tuned.png>
+TUNED <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/tuned.png>
 
 3. Изменение motd
 
@@ -75,5 +75,9 @@ KAFKA <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/kafka.png>
 ```
 
 ###
+
+MOTD  <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/motd2.png>
+
+<https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/motd.png>
 
 
