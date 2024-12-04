@@ -14,7 +14,7 @@
   tasks:
     - name: Create a directory for extraction
       file:
-        path: /opt/archive
+        path: /opt/myarchive
         state: directory
 
     - name: Download the archive
@@ -25,7 +25,7 @@
     - name: Extract the archive
       unarchive:
         src: /tmp/kafka.tgz
-        dest: /opt/archive
+        dest: /opt/myarchive
         remote_src: yes
 ```
 ###
@@ -37,7 +37,7 @@ KAFKA <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/kafka.png>
 
 ```yaml
 ---
-- name: Install and enable tuned
+- name: Install&Enable tuned
   hosts: all
   become: true
   tasks:
@@ -57,14 +57,14 @@ KAFKA <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/kafka.png>
 
 ```yaml
 ---
-- name: Update system MOTD
+- name: Update MOTD
   hosts: all
   become: true
   vars:
     custom_motd: "Welcome, Admin!"
 
   tasks:
-  - name: Update the motd file
+    - name: Update the motd file
       copy:
         content: "{{ custom_motd }}"
         dest: /etc/motd

@@ -1,0 +1,12 @@
+---
+- name: Update MOTD
+  hosts: all
+  become: true
+  vars:
+    custom_motd: "Welcome, Admin!"
+
+  tasks:
+    - name: Update the motd file
+      copy:
+        content: "{{ custom_motd }}"
+        dest: /etc/motd
