@@ -114,4 +114,8 @@ Update MOTD <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/update
 
 Выполните действия, приложите архив с ролью и вывод выполнения.
 
+ANSIBLE APACHE <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/ansible_apache.png>
 
+INDEX HTML1 <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/%20index1.html.png>
+
+INDEX HTML2 <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/%20index2.html.png>
