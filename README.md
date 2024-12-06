@@ -108,7 +108,7 @@ MOTD  <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/motd2.png>
         dest: /etc/motd
 ```
 
-Update MOTD <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/update_motd.png.png>
+Update MOTD <https://github.com/PeterFumelli/7-2-ansible-hw/blob/main/img/update_motd.png>
 
 ### Задание 3
 
