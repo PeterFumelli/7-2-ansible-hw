@@ -9,7 +9,7 @@
         <li>IP Address: {{ ansible_facts['default_ipv4']['address'] }}</li>
         <li>CPU Cores: {{ ansible_facts['processor_cores'] }}</li>
         <li>RAM: {{ ansible_facts['memtotal_mb'] }} MB</li>
-        <li>First HDD Size: {{ ansible_facts['devices']['sda']['size'] if 'sda' in ansible_facts['devices'] else 'Unknown' }}</li>
+        <li>First HDD Size: {{ ansible_facts['devices']['nvme0n1']['size'] if 'nvme0n1' in ansible_facts['devices'] else 'Unknown' }}</li>
     </ul>
 </body>
 </html>
